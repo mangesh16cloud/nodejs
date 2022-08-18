@@ -14,7 +14,6 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "sonar-scanner": "node_modules/sonar-scanner/bin/sonar-scanner.bat"
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
