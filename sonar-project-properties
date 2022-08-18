@@ -4,6 +4,6 @@ sonar.projectVersion=8.9.1
 sonar.sources=.
 sonar.sourceEncoding=UTF-8
 sonar.host.url=http://10.1.76.15:9000/
-sonar.login=db22269a2de13772ee0357b8c6a30a0986d41bf6
+sonar.login=jenkins
 sonar.exclusions=**/node_modules/**,/coverage/lcov-report/*,test/*.js
 sonar.javascript/lcov.reportPaths=coverage/lcov.info
