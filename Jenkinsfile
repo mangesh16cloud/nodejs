@@ -4,7 +4,7 @@ pipeline {
         nodejs "nodejs"
     }
     stages {
-        stage('SCM checkout server') {
+        stage('SCM checkout phase') {
 	     agent { 
     		label 'jenkins-agent'
 		}
@@ -15,7 +15,7 @@ pipeline {
             }
         }
 	
-        stage('sonar-analysis server') {
+        stage('sonar-analysis phase') {
             steps {
                 unstash 'source'
                 echo 'unstash successful'
@@ -30,7 +30,7 @@ pipeline {
             }
         }
         }
-        stage ('npm build server UNDER CONSTRUCTION') {
+        stage ('npm build phase UNDER CONSTRUCTION') {
             steps{
                 unstash 'source'
                 echo 'unstash is successfull'
@@ -38,7 +38,7 @@ pipeline {
                 echo 'node build successfull'
             }
         }
-        stage ('manual test server  UNDER CONSTRUCTION') {
+        stage ('manual test phase  UNDER CONSTRUCTION') {
             steps{
                 unstash 'source'
                 echo 'unstash is successfull'
@@ -46,7 +46,7 @@ pipeline {
                 echo 'node build perform here'
             }
         }
-        stage ('docker-image server for version control UNDER CONSTRUCTION') {
+        stage ('docker-image phase for version control UNDER CONSTRUCTION') {
             steps{
                 
                 echo 'docker images build here'
