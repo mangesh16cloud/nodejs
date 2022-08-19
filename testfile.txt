@@ -3,3 +3,4 @@ testing trigger
 2nd test
 6th trigger
 7th trigger
+8th trigger
